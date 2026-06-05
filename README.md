@@ -30,8 +30,3 @@ The notebook follows a progressive structure, where each chapter builds on the l
 ## Stack
 
 Python · PyTorch · Gymnasium · Matplotlib · Google Colab
-
-## Notes
-
-This project was built with AI assistance (Claude) for code generation and debugging,
-as part of a supervised internship task to understand RL and DL implementation in practice.
