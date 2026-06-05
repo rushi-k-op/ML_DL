@@ -1,17 +1,37 @@
-# CartPole DQN — RL Learning Project
+# Reinforcement Learning & Deep Learning — Self-Study Project
 
-Internship self-study implementing Deep Q-Networks from scratch,
-following the MDP → Bellman → Q-Learning → DQN progression.
+A structured learning notebook built during my internship at TU Dortmund,
+exploring Reinforcement Learning from mathematical foundations to a working
+Deep Q-Network implementation.
 
-## Structure
-The single notebook covers 5 chapters...
+## What this covers
 
-## Key Concepts
-- MDP tuple, Bellman optimality, TD learning, function approximation
+The notebook follows a progressive structure, where each chapter builds on the last:
 
-## Results
+1. **MDP Framework** — Formalising the RL problem using the MDP tuple, applied to CartPole
+2. **Value Functions & Bellman Equation** — Defining Q-values and the optimality equation; baseline random agent
+3. **Tabular Q-Learning** — TD learning on a discretised state space; observing why it fails on continuous problems
+4. **Deep Q-Networks (DQN)** — Neural function approximation, Experience Replay, and Target Networks
+5. **Training & Results** — Full DQN training loop with Double DQN, gradient clipping, and reward shaping
 
+## Environment
 
-## References
-- Sutton & Barto, Reinforcement Learning (2nd ed.)
-- Lecture slides: Prof. Dr. Sergio Lucia, TU Dortmund
+- **Task:** CartPole-v1 (OpenAI Gymnasium)
+- **Goal:** Keep a pole balanced on a cart for 500 consecutive steps
+
+## Key results
+
+| Method | Avg reward | Notes |
+|---|---|---|
+| Random agent | ~15 | No learning |
+| Tabular Q-Learning | Unstable | Discretisation loses precision |
+| DQN (improved) | ~224 at ep 400 | Still converging |
+
+## Stack
+
+Python · PyTorch · Gymnasium · Matplotlib · Google Colab
+
+## Notes
+
+This project was built with AI assistance (Claude) for code generation and debugging,
+as part of a supervised internship task to understand RL and DL implementation in practice.
